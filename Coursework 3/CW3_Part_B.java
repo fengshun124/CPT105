@@ -127,8 +127,7 @@ public class CW3_Part_B {
         Picture dest = new Picture(src.width(), src.height());
 
         int rowWave;
-        int pow = (int) Math.pow(10, 2);
-        double factorWave = Math.floor((Math.random() * (10 - 1) + 1) * pow) / (pow * 10);
+        double factorWave = Math.floor(Math.random() * 9 + 1) / 10;
 
         for (int col = 0; col < src.width(); col++) {
             for (int row = 0; row < src.height(); row++) {
