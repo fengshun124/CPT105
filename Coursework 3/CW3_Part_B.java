@@ -12,10 +12,6 @@ public class CW3_Part_B {
      ****************/
 
     // Original picture and positionally tranformed picture.
-    private static int inRange(int input, int upper) {
-        return Math.min(upper, (Math.max(input, 0)));
-    }
-
     private static Picture transformRotate(Picture src) {
         Picture dest = new Picture(src.width(), src.height());
 
@@ -233,7 +229,7 @@ public class CW3_Part_B {
         return dest;
     }
 
-    private static Picture filter2077(Picture src) {
+    private static Picture filterShift(Picture src) {
         Picture dest = new Picture(src.width(), src.height());
         int filterR, filterG, filterB;
         int randomNum = 1 + (int) (Math.random() * 4);
@@ -306,7 +302,7 @@ public class CW3_Part_B {
         Picture process = new Picture(picture.width(), picture.height());
 
 
-        process = filterFilm(filterFrost(picture));
+        process = filterFilm(picture);
 //        filterGray(process, process);
 //        filterReverseColour(process,process);
 //        filter2077(process,process);
@@ -333,11 +329,26 @@ public class CW3_Part_B {
 
 
     public static void main(String[] args) {
-        Picture andrew = new Picture("C:\\Users\\Yifan Wang\\Downloads\\cw3\\Andrew.png");
-        //andrew.show();
+        Picture input = new Picture("path\to\Test.png");
 
-        positionalTransform(andrew).show();
-        colorTransform(andrew).show();
+        input.show();
+        transformSwirl(input).show();
+        transformWave(input).show();
+        transformEnlarge(input).show();
+        transformRotate(input).show();
+        transformUpsideDown(input).show();
+        transformLeftRight(input).show();
+        transformSplit(input).show();
+
+        filterReverseColour(input).show();
+        filterFilm(input).show();
+        filterDualColour(input).show();
+        filterGray(input).show();
+        filterFrost(input).show();
+        filterShift(input).show();
+
+        positionalTransform(input).show();
+        colorTransform(input).show();
 
     }
 }
