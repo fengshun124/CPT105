@@ -28,7 +28,7 @@ public class NoZeroCloseInterval extends CloseInterval {
     // or "does not contain zero" depending whether the interval contains zero
     @Override
     public String toString() {
-        if(noZero) return super.toString() + " does not contain zero";
+        if (noZero) return super.toString() + " does not contain zero";
         else return super.toString() + " contains zero";
     }
 
