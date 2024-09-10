@@ -2,7 +2,9 @@
 
 This repository houses a selection of source code from the CPT105 module at Xi'an Jiaotong-Liverpool University (XJTLU).
 Notice that while I try to keep the source code complete and up-to-date, it is not guaranteed.
+
 :warning: **DO NOT** copy the code directly for your assignments. Plagiarism is a serious academic offense.
+
 :warning: As this is not a plug-and-play repository, you may need to modify the directory structure and file paths to make the code work on your machine.
 
 ## Repository Structure
