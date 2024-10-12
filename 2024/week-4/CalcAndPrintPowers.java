@@ -25,7 +25,7 @@ class CalcAndPrintPowers {
             // or use Math.pow() method to calculate the power and cubic
             // System.out.println("Num. " + i + " Square " + Math.pow(i, 2) + " Cube " + Math.pow(i, 3));
             // print separation lines for better readability
-            System.out.println("-------------------------------------------------");
+            System.out.println("=-".repeat(10));
         }
     }
 }

@@ -1,6 +1,7 @@
 /*
 Lab #4.2 A Diamond is FORever - Nested For Loops
 Print a diamond pattern using asterisks (*) or dots (.) with spaces in between, based on the given number of rows.
+In this snippet, two methods are implemented to print the diamond pattern (thought it only requires one method).
  */
 
 
@@ -12,8 +13,8 @@ public class DiamondForever {
         System.out.println("Enter the number of rows: ");
         int rows = keyboard.nextInt();
 
-        if (rows < 1) {
-            System.out.println("Please enter a positive number.");
+        if (rows < 1 || rows % 2 == 0) {
+            System.out.println("Please enter a positive odd number.");
         } else {
             diamond(rows);
         }
@@ -21,23 +22,45 @@ public class DiamondForever {
 
     public static void diamond(int numOfRow) {
         // determine the middle row
-        int mid = (numOfRow + 1) / 2;
+        int mid = numOfRow / 2;
 
-        // loop for each row in the diamond
-        for (int i = 0; i < numOfRow; i++) {
-            int numStars = i < mid ? 2 * i + 1 : 2 * (numOfRow - i - 1) + 1;
-            int numDots = (numOfRow - numStars) / 2;
+        // print the upper and lower half of the diamond separately
+        for (int row = 0; row < numOfRow; row++) {
+            // print the upper half of the diamond
+            if (row <= mid) {
+                for (int col = 0; col < numOfRow; col++) {
+                    if (col >= mid - row && col <= mid + row) {
+                        System.out.print("* ");
+                    } else {
+                        System.out.print(". ");
+                    }
+                }
+            } else {
+                // print the lower half of the diamond
+                for (int col = 0; col < numOfRow; col++) {
+                    if (col >= row - mid && col < numOfRow - (row - mid)) {
+                        System.out.print("* ");
+                    } else {
+                        System.out.print(". ");
+                    }
+                }
+            }
+            System.out.println();
+        }
 
-            for (int j = 0; j < numDots; j++) {
-                System.out.print(". ");
-            }
-            // print stars
-            for (int j = 0; j < numStars; j++) {
-                System.out.print("* ");
-            }
-            // print dots again
-            for (int j = 0; j < numDots; j++) {
-                System.out.print(". ");
+        System.out.println("\n" + "=-".repeat(numOfRow) + "\n");
+
+        // more efficient way to print the diamond
+        // iterate through the rows
+        for (int row = -mid; row <= mid; row++) {
+            // iterate through the columns
+            for (int col = -mid; col <= mid; col++) {
+                // check the Manhattan distance from the center
+                if (Math.abs(row) + Math.abs(col) <= mid) {
+                    System.out.print("* ");
+                } else {
+                    System.out.print(". ");
+                }
             }
             System.out.println();
         }
