@@ -1,3 +1,11 @@
+# CPT105 - Coursework 2
+
+This markdown file contains multiple-choice questions for CPT105 Coursework 2. A **non-official** solution is provided for each question for reference.
+
+:bulb: If you find any concepts difficult to understand, it is strongly recommended to review the lecture notes for the class. They provide detailed explanations and examples that can help clarify any doubts you may have.
+
+---
+
 > According to the code fragment provided, which option’s return value is -1?
 > 
 > ```java
@@ -15,7 +23,6 @@
 >     }
 >     return -1;
 > }
-> 
 > ```
 > 
 > - **Option A:** `checkStr("abcdef", "abcd")`
@@ -63,15 +70,15 @@
 
 > Read the following code fragment.
 > ```java
-> 1  public class MyDate
-> 2  {
-> 3      public String month;
-> 4      public int day;
-> 5      public int year;
-> 6  
-> 7      public MyDate(String month, int day, int year) {
-> 8          this.month = month;
-> 9          this.day = day;
+>  1 public class MyDate
+>  2 {
+>  3     public String month;
+>  4     public int day;
+>  5     public int year;
+>  6  
+>  7     public MyDate(String month, int day, int year) {
+>  8         this.month = month;
+>  9         this.day = day;
 > 10         this.year = year;
 > 11     }
 > 12 
@@ -119,11 +126,11 @@
 
 ---
 
-> What is the correct way to create an object called myObj of MyClass?
-> - **Option A**: class myObj = new MyClass();
-> - **Option B**: new myObj = MyClass();
-> - **Option C**: MyClass myObj = new MyClass();
-> - **Option D**: class MyClass = new MyObj();
+> What is the correct way to create an object called `myObj` of `MyClass`?
+> - **Option A**: `class myObj = new MyClass();`
+> - **Option B**: `new myObj = MyClass();`
+> - **Option C**: `MyClass myObj = new MyClass();`
+> - **Option D**: `class MyClass = new MyObj();`
 
 **Explanation:** To create an object of a class in Java, use the syntax `ClassName objectName = new ClassName();`.
 
@@ -131,7 +138,7 @@
 
 ---
 
-> Calculation order in Java
+> *Calculation order in Java*
 > 
 > Q1. What is the result of the expression `(11 + 3 * 8) / 4 % 3`?
 > - **Option 1A:** `2`
@@ -177,7 +184,7 @@
 > - **Option C:** `=`
 > - **Option D:** `<>`
 
-**Explanation:** The `==` operator is used to compare two values for equality in Java.
+**Explanation:** The `==` operator is used to compare two values for equality in Java. The `=` operator is used for assignment, not comparison. The remaining operators are not valid comparison operators in Java.
 
 **Answer:** The correct option is `B` (`==`).
 
@@ -207,7 +214,8 @@
 
 ---
 
-> Keywords in Java
+> *Keywords in Java*
+> 
 > Q1. Which one of the following is a keyword in Java?
 > - **Option 1A:** `positive`
 > - **Option 1B:** `transfer`
@@ -226,10 +234,21 @@
 > - **Option 3C:** `class`
 > - **Option 3D:** `instance`
 
-**Explanation:** 
-- **Q1:** `class` is a keyword in Java used to declare a class.
-- **Q2:** `new` is a keyword in Java used to create a new instance of a class.
-- **Q3:** `this` is a keyword in Java used to refer to the current instance of an object within a class.
+**Explanation:** Java keywords are reserved words with special meanings that cannot be used as identifiers (e.g., variable names, method names). Here are some examples:
+
+- `class`: Declares a class. Example: `public class MyClass { ... }`.
+- `new`: Creates a new instance of a class. Example: `MyClass obj = new MyClass();`.
+- `this`: Refers to the current instance of an object within a class. Example: `this.variableName`.
+- `public`, `private`, `protected`: Specify the visibility of classes, methods, and variables.
+- `for`, `while`: Control loops.
+- `if`, `else`: Control conditional statements.
+- `void`: Indicates that a method does not return a value.
+- `return`: Returns a value from a method.
+
+These keywords have specific functions and cannot be used as identifiers in Java programmes. Based on the given options in the questions:
+- **Q1:** `class` is a keyword used to declare a class.
+- **Q2:** `new` is a keyword used to create a new instance of a class.
+- **Q3:** `this` is a keyword used to refer to the current instance of an object within a class.
 
 **Answer:** 
 - **Q1:** The correct option is `D` (`class`).
@@ -265,6 +284,7 @@
 > private static void display(int a) {
 >     System.out.println("Argument: " + a);
 > }
+> ```
 > - **Option A:** `private static int display(int a) { ... }`
 > - **Option B:** `private static void display(String a) { ... }`
 > - **Option C:** `private static void display(int a, int b, int c) { ... }`
