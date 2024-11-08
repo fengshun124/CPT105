@@ -45,12 +45,16 @@ This markdown file contains multiple-choice questions for CPT105 Coursework 2. A
 ---
 > The IDE (such as IntelliJ IDEA, NetBeans, Eclipse) will mark your code with an underline whenever the following type of error exists in your code.
 > 
-> - **Option A:** Program error
+> - **Option A:** Programme error
 > - **Option B:** Compile error
 > - **Option C:** Runtime error
 > - **Option D:** Logical error
 
 **Explanation:** The IDE will mark your code with an underline whenever a compile error exists in your code. 
+- **Option A:** *Programme error* is a general term that can refer to any type of error in a program, including *compile errors*, *runtime errors* and *logical errors*.
+- **Option B:** *Compile error* occurs when the code does not compile due to syntax errors or other issues, and the IDE will mark these errors.
+- **Option C:** *Runtime error* occurs when the programme is running and encounters an issue that causes it to crash or behave unexpectedly, but the IDE may not mark these errors, as they are not detected until runtime.
+- **Option D:** *Logical error* occurs when the programme runs without crashing, but produces incorrect results due to a mistake in the logic of the code (e.g., incorrect calculations or indefinite loops), and the IDE may not mark these errors.
 
 **Answer:** The correct option is `B` (Compile error).
 
@@ -113,7 +117,7 @@ This markdown file contains multiple-choice questions for CPT105 Coursework 2. A
 > - **Option 4D:** Line 11
 
 **Explanation:**
-- **Q1:** The constructor in Java is a special method with the same name as the class and no return type, used to initialize the instance variables of the class. 
+- **Q1:** The constructor in Java is a special method with the same name as the class and no return type, used to initialise the instance variables of the class. 
 - **Q2:** Instance variables are declared at the class level and are used to store the state of an object, in this case, `month`, `day`, and `year`.
 - **Q3:** Instance methods are methods that operate on the instance variables of an object, in this case, `printDate`.
 - **Q4:** To follow the encapsulation principle, instance variables should be declared as `private` to restrict direct access from outside the class.
@@ -173,6 +177,10 @@ This markdown file contains multiple-choice questions for CPT105 Coursework 2. A
 > - **Option D:** `//`
 
 **Explanation:** In Java, `//` is the single-line comment operator, not a Boolean operator.
+- **Option A:** `||` is the logical OR operator, used to check if at least one of the two conditions is true.
+- **Option B:** `&&` is the logical AND operator, used to check if both conditions are true.
+- **Option C:** `!` is the logical NOT operator, used to negate a Boolean value (e.g., `!true` is `false`).
+- **Option D:** `//` is used to start a single-line comment in Java.
 
 **Answer:** The correct option is `D` (`//`).
 
@@ -326,7 +334,7 @@ These keywords have specific functions and cannot be used as identifiers in Java
 > - **Option C:** `int [] values = {2,3.5,4,5}`
 > - **Option D:** `double [] values = {2,3,4,5}`
 
-**Explanation:** In Java, when initializing an array, the values must be of the same type as the array type.
+**Explanation:** In Java, when initialising an array, the values must be of the same type as the array type.
 - **Option A:** `double [] values = {2,3,4,5}` is valid.
 - **Option B:** `int [] values = {2,3,4,5}` is valid.
 - **Option C:** `int [] values = {2,3.5,4,5}` is not valid because `3.5` is a `double` value, not an `int`.
@@ -448,6 +456,10 @@ Considering the calculation order in Java, the correct option is `A` (`double c 
 > - **Option D:** Objects and References
 
 **Explanation:** The main components of a Java `class` are methods and attributes (variables).
+- **Option A:** Methods and Attributes are the primary components of a Java class.
+- **Option B:** Variables and Functions are part of a class but not the main components.
+- **Option C:** Constructor and Destructor are special methods in a class but not the main components.
+- **Option D:** Objects and References are related to instances of a class but not the main components of the class itself.
 
 **Answer:** The correct option is `A` (Methods and Attributes).
 
@@ -462,7 +474,7 @@ Considering the calculation order in Java, the correct option is `A` (`double c 
 > - **Option C:** `Hello,World`
 > - **Option D:** `HelloWorld`
 
-**Explanation:** The `split` method splits a string into an array of substrings based on a delimiter. In this case, the string `"Hello,World"` is split at the comma `,`, resulting in an array `["Hello", "World"]`. The `[1]` index accesses the second element of the array, which is `"World"`.
+**Explanation:** The `split` method splits a string into an array of substrings based on the provided delimiter. In this case, the string `"Hello,World"` is split at the comma `,`, resulting in an array `["Hello", "World"]`. The `[1]` index accesses the second element of the array, which is `"World"`.
 
 **Answer:** The correct option is `B` (`World`).
 
@@ -634,7 +646,7 @@ Considering the calculation order in Java, the correct option is `A` (`double c 
 - **Option A:** `// This is a comment` is a valid single-line comment.
 - **Option B:** `/* This is a comment` is the start of a multi-line comment. The comment should be closed with `*/`. For example, `/* This is a comment */`.
 - **Option C:** `<!-- This is a comment -->` is an HTML/XML comment syntax, not Java.
-- **Option D:** `# This is a comment` is used in some scripting languages like Bash, but not in Java.
+- **Option D:** `# This is a comment` is used in other languages like Python and shell scripting, but not in Java.
 
 **Answer:** The correct option is `A` (`// This is a comment`).
 
