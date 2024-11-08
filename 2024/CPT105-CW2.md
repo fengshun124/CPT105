@@ -445,7 +445,7 @@ Considering the calculation order in Java, the correct option is `A` (`double c 
 
 **Explanation:** The code snippet assigns the value of `a` to `c`, then assigns the value of `c` to `b`, and finally assigns the value of `b` to `a`. This results in `a` and `b` swapping values.
 
-**Answer:** The correct option is `A` (The values of `a` and `b` are exchanged).
+**Answer:** The correct option is `D` (The values of `a`, `b` and `c` become the value of `a`).
 
 ---
 
