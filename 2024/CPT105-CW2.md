@@ -79,18 +79,18 @@ This markdown file contains multiple-choice questions for CPT105 Coursework 2. A
 >  3     public String month;
 >  4     public int day;
 >  5     public int year;
->  6  
->  7     public MyDate(String month, int day, int year) {
->  8         this.month = month;
->  9         this.day = day;
-> 10         this.year = year;
-> 11     }
-> 12 
-> 13     public void printDate()
-> 14     {
-> 15         System.out.println(month + " " + day + ", " + year);
-> 16     }
-> 17 }
+>    
+>  6     public MyDate(String month, int day, int year) {
+>  7         this.month = month;
+>  8         this.day = day;
+>  9         this.year = year;
+> 10     }
+>  
+> 11     public void printDate()
+> 12     {
+> 13         System.out.println(month + " " + day + ", " + year);
+> 14     }
+> 15 }
 > ```
 > Q1. Select the line number(s) of the class `MyDate` that corresponds to the constructor.
 > - **Option 1A:** Line 1
@@ -322,25 +322,25 @@ These keywords have specific functions and cannot be used as identifiers in Java
 > - **Option C:** `-55`
 > - **Option D:** `-5-5`
 
-**Explanation:** The `negate` method takes an integer `x` and returns the negation of `x`. In the `main` method, `x` is initially `5`, so `5` is printed, then `x` is negated to `-5`, which is printed next.
+**Explanation:** The `negate` method takes an integer `x` and returns the negation of `x`. In the `main` method, `x` is initially `5`, so `5` is printed first, then `x` is negated to `-5`, which is printed next.
 
 **Answer:** The correct option is `D` (`5-5`).
 
 ---
 
 > Which of the following code is not true in Java?
-> - **Option A:** `double [] values = {2,3,4,5}`
-> - **Option B:** `int [] values = {2,3,4,5}`
-> - **Option C:** `int [] values = {2,3.5,4,5}`
-> - **Option D:** `double [] values = {2,3,4,5}`
+> - **Option A:** `double[] values = {2,3,4,5}`
+> - **Option B:** `int[] values = {2,3,4,5}`
+> - **Option C:** `int[] values = {2,3.5,4,5}`
+> - **Option D:** `double[] values = {2,3,4,5}`
 
 **Explanation:** In Java, when initialising an array, the values must be of the same type as the array type.
-- **Option A:** `double [] values = {2,3,4,5}` is valid.
-- **Option B:** `int [] values = {2,3,4,5}` is valid.
-- **Option C:** `int [] values = {2,3.5,4,5}` is not valid because `3.5` is a `double` value, not an `int`.
-- **Option D:** `double [] values = {2,3,4,5}` is valid.
+- **Option A:** `double[] values = {2,3,4,5}` is valid.
+- **Option B:** `int[] values = {2,3,4,5}` is valid.
+- **Option C:** `int[] values = {2,3.5,4,5}` is not valid because `3.5` is a `double` value, not an `int`.
+- **Option D:** `double[] values = {2,3,4,5}` is valid.
 
-**Answer:** The correct option is `C` (`int [] values = {2,3.5,4,5}`).
+**Answer:** The correct option is `C` (`int[] values = {2,3.5,4,5}`).
 
 ---
 
@@ -381,7 +381,7 @@ These keywords have specific functions and cannot be used as identifiers in Java
 > - **Option C:** Before the `for` loop body
 > - **Option D:** After the `for` loop body
 
-**Explanation:** In a `for` loop, the condition is checked at the beginning of each iteration, before executing the loop body.
+**Explanation:** In a `for` loop, the condition is checked at the beginning of each iteration, before executing the loop body (i.e., the code inside the loop). If the condition is `true`, the loop body is executed; if the condition is `false`, the loop terminates.
 
 **Answer:** The correct option is `A` (Only at the beginning of the loop).
 
@@ -443,9 +443,9 @@ Considering the calculation order in Java, the correct option is `A` (`double c 
 > - **Option C:** The values of `a` and `b` remain unchanged.
 > - **Option D:** The values of `a`, `b` and `c` become the value of `a`.
 
-**Explanation:** The code snippet assigns the value of `a` to `c`, then assigns the value of `c` to `b`, and finally assigns the value of `b` to `a`. This results in `a` and `b` swapping values.
+**Explanation:** The code snippet assigns the value of `a` to `c`, then assigns the value of `c` to `b`, and finally assigns the value of `b` to `a`. This results in `a` and `b` having the same value as `c`.
 
-**Answer:** The correct option is `A` (The values of `a` and `b` are exchanged).
+**Answer:** The correct option is `D` (The values of `a`, `b` and `c` become the value of `a`).
 
 ---
 
