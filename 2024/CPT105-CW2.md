@@ -7,7 +7,7 @@ This markdown file contains multiple-choice questions for CPT105 Coursework 2. A
 ---
 
 > According to the code fragment provided, which option’s return value is -1?
-> 
+>
 > ```java
 > public static int checkStr(String str1, String str2) {
 >     int n = str1.length(), m = str2.length();
@@ -24,13 +24,10 @@ This markdown file contains multiple-choice questions for CPT105 Coursework 2. A
 >     return -1;
 > }
 > ```
-> 
+>
 > - **Option A:** `checkStr("abcdef", "abcd")`
-> 
 > - **Option B:** `checkStr("abcdef", "acd")`
-> 
 > - **Option C:** `checkStr("abcdef", "bcd")`
-> 
 > - **Option D:** `checkStr("abcdef", "cde")`
 
 **Explanation** The function `checkStr` attempts to find the index at which `str2` appears as a substring in `str1`. If it finds `str2` in `str1`, it returns the starting index; otherwise, it returns `-1`.
@@ -44,13 +41,14 @@ This markdown file contains multiple-choice questions for CPT105 Coursework 2. A
 
 ---
 > The IDE (such as IntelliJ IDEA, NetBeans, Eclipse) will mark your code with an underline whenever the following type of error exists in your code.
-> 
+>
 > - **Option A:** Programme error
 > - **Option B:** Compile error
 > - **Option C:** Runtime error
 > - **Option D:** Logical error
 
-**Explanation:** The IDE will mark your code with an underline whenever a compile error exists in your code. 
+**Explanation:** The IDE will mark your code with an underline whenever a compile error exists in your code.
+
 - **Option A:** *Programme error* is a general term that can refer to any type of error in a program, including *compile errors*, *runtime errors* and *logical errors*.
 - **Option B:** *Compile error* occurs when the code does not compile due to syntax errors or other issues, and the IDE will mark these errors.
 - **Option C:** *Runtime error* occurs when the programme is running and encounters an issue that causes it to crash or behave unexpectedly, but the IDE may not mark these errors, as they are not detected until runtime.
@@ -61,18 +59,20 @@ This markdown file contains multiple-choice questions for CPT105 Coursework 2. A
 ---
 
 > How do you call a method without parameters in Java?
+>
 > - **Option A:** `methodName();`
 > - **Option B:** `methodName;`
 > - **Option C:** `methodName[];`
 > - **Option D:** `(methodName);`
 
-**Explanation:** To call a method without parameters in Java, you use the syntax `methodName();`. 
+**Explanation:** To call a method without parameters in Java, you use the syntax `methodName();`.
 
 **Answer:** The correct option is `A` (`methodName();`).
 
 ---
 
 > Read the following code fragment.
+>
 > ```java
 >  1 public class MyDate
 >  2 {
@@ -92,37 +92,44 @@ This markdown file contains multiple-choice questions for CPT105 Coursework 2. A
 > 14     }
 > 15 }
 > ```
+>
 > Q1. Select the line number(s) of the class `MyDate` that corresponds to the constructor.
+>
 > - **Option 1A:** Line 1
 > - **Option 1B:** Line 6-10
 > - **Option 1C:** Line 11-14
 > - **Option 1D:** Line 3-5
-> 
+>
 > Q2. Select the line number(s) of the class `MyDate` that corresponds to the instance variables.
+>
 > - **Option 2A:** Line 11-14
 > - **Option 2B:** Line 3-5
 > - **Option 2C:** Line 7-9
 > - **Option 2D:** Line 6-10
-> 
+>
 > Q3. Select the line number(s) of the class `MyDate` that corresponds to the instance method.
+>
 > - **Option 3A:** Line 1
 > - **Option 3B:** Line 3-5
 > - **Option 3C:** Line 11-14
 > - **Option 3D:** Line 6-10
 >
 > Q4. Select the line number(s) of the class `MyDate` that should be declared as `private` to follow the encapsulation principle.
+>
 > - **Option 4A:** Line 3-5
 > - **Option 4B:** Line 6
 > - **Option 4C:** Line 1
 > - **Option 4D:** Line 11
 
 **Explanation:**
-- **Q1:** The constructor in Java is a special method with the same name as the class and no return type, used to initialise the instance variables of the class. 
+
+- **Q1:** The constructor in Java is a special method with the same name as the class and no return type, used to initialise the instance variables of the class.
 - **Q2:** Instance variables are declared at the class level and are used to store the state of an object, in this case, `month`, `day`, and `year`.
 - **Q3:** Instance methods are methods that operate on the instance variables of an object, in this case, `printDate`.
 - **Q4:** To follow the encapsulation principle, instance variables should be declared as `private` to restrict direct access from outside the class.
 
 **Answers:**
+
 - **Q1:** The correct option is `B` (Line 6-10).
 - **Q2:** The correct option is `B` (Line 3-5).
 - **Q3:** The correct option is `C` (Line 11-14).
@@ -131,6 +138,7 @@ This markdown file contains multiple-choice questions for CPT105 Coursework 2. A
 ---
 
 > What is the correct way to create an object called `myObj` of `MyClass`?
+>
 > - **Option A**: `class myObj = new MyClass();`
 > - **Option B**: `new myObj = MyClass();`
 > - **Option C**: `MyClass myObj = new MyClass();`
@@ -143,40 +151,47 @@ This markdown file contains multiple-choice questions for CPT105 Coursework 2. A
 ---
 
 > *Calculation order in Java*
-> 
+>
 > Q1. What is the result of the expression `(11 + 3 * 8) / 4 % 3`?
+>
 > - **Option 1A:** `2`
 > - **Option 1B:** `31`
 > - **Option 1C:** `0`
 > - **Option 1D:** `1`
-> 
+>
 > Q2. Which of the following expressions results in `5` when evaluated?
+>
 > - **Option 2A:** `20 / 2 + 2`
 > - **Option 2B:** `7 + 3 / 2`
 > - **Option 2C:** `3 + 5 / 2`
 > - **Option 2D:** `2 / 3 + 4`
 
 **Explanation:** By evaluation order that calculate the division / multiplication first, then addition / subtraction, and finally the modulo operation.
+
 - **Q1:** `(11 + 3 * 8) / 4 % 3` = `(11 + 24) / 4 % 3` = `35 / 4 % 3` = `8 % 3` = `2`.
-- **Q2:** 
+- **Q2:**
+
   - **Option 2A:** `20 / 2 + 2` = `10 + 2` = `12`.
   - **Option 2B:** `7 + 3 / 2` = `7 + 1` = `8`.
   - **Option 2C:** `3 + 5 / 2` = `3 + 2` = `5`.
   - **Option 2D:** `2 / 3 + 4` = `0 + 4` = `4`.
 
 **Answer:**
+
 - **Q1:** The correct option is `A` (`2`).
 - **Q2:** The correct option is `C` (`3 + 5 / 2`).
 
 ---
 
 > Which of the following is NOT a Boolean operator in Java?
+>
 > - **Option A:** `||`
 > - **Option B:** `&&`
 > - **Option C:** `!`
 > - **Option D:** `//`
 
 **Explanation:** In Java, `//` is the single-line comment operator, not a Boolean operator.
+
 - **Option A:** `||` is the logical OR operator, used to check if at least one of the two conditions is true.
 - **Option B:** `&&` is the logical AND operator, used to check if both conditions are true.
 - **Option C:** `!` is the logical NOT operator, used to negate a Boolean value (e.g., `!true` is `false`).
@@ -187,6 +202,7 @@ This markdown file contains multiple-choice questions for CPT105 Coursework 2. A
 ---
 
 > Which of the following operator can be used to compare two values in Java?
+>
 > - **Option A:** `><`
 > - **Option B:** `==`
 > - **Option C:** `=`
@@ -199,6 +215,7 @@ This markdown file contains multiple-choice questions for CPT105 Coursework 2. A
 ---
 
 > What is performed when `+` operator is used with two strings in Java?
+>
 > - **Option A:** Addition
 > - **Option B:** Concatenation
 > - **Option C:** Subtraction
@@ -211,6 +228,7 @@ This markdown file contains multiple-choice questions for CPT105 Coursework 2. A
 ---
 
 > Which of the following MUST end with a semicolon in Java?
+>
 > - **Option A:** A block of code
 > - **Option B:** A statement
 > - **Option C:** An expression
@@ -223,20 +241,23 @@ This markdown file contains multiple-choice questions for CPT105 Coursework 2. A
 ---
 
 > *Keywords in Java*
-> 
+>
 > Q1. Which one of the following is a keyword in Java?
+>
 > - **Option 1A:** `positive`
 > - **Option 1B:** `transfer`
 > - **Option 1C:** `escape`
 > - **Option 1D:** `class`
 >
 > Q2. What is the keyword used to create a new instance of a class in Java?
+>
 > - **Option 2A:** `new`
 > - **Option 2B:** `this`
 > - **Option 2C:** `object`
 > - **Option 2D:** `instance`
 >
 > Q3. What is the keyword used to refer to the current instance of an object within a class in Java?
+>
 > - **Option 3A:** `new`
 > - **Option 3B:** `this`
 > - **Option 3C:** `class`
@@ -254,11 +275,13 @@ This markdown file contains multiple-choice questions for CPT105 Coursework 2. A
 - `return`: Returns a value from a method.
 
 These keywords have specific functions and cannot be used as identifiers in Java programmes. Based on the given options in the questions:
+
 - **Q1:** `class` is a keyword used to declare a class.
 - **Q2:** `new` is a keyword used to create a new instance of a class.
 - **Q3:** `this` is a keyword used to refer to the current instance of an object within a class.
 
-**Answer:** 
+**Answer:**
+
 - **Q1:** The correct option is `D` (`class`).
 - **Q2:** The correct option is `A` (`new`).
 - **Q3:** The correct option is `B` (`this`).
@@ -266,6 +289,7 @@ These keywords have specific functions and cannot be used as identifiers in Java
 ---
 
 > What is the output of the following code?
+>
 > ```java
 > public class Test {
 >     public static void main(String[] args) {
@@ -276,6 +300,7 @@ These keywords have specific functions and cannot be used as identifiers in Java
 >     }
 > }
 > ```
+>
 > - **Option A:** `abc`
 > - **Option B:** `cba`
 > - **Option C:** `cbacba`
@@ -288,23 +313,57 @@ These keywords have specific functions and cannot be used as identifiers in Java
 ---
 
 > Which is not the overloading of the display method?
+>
 > ```java
 > private static void display(int a) {
 >     System.out.println("Argument: " + a);
 > }
 > ```
+>
 > - **Option A:** `private static int display(int a) { ... }`
 > - **Option B:** `private static void display(String a) { ... }`
 > - **Option C:** `private static void display(int a, int b, int c) { ... }`
 > - **Option D:** `private static void display(int a, int b) { ... }`
 
-**Explanation:** Overloading occurs when multiple methods in the same class have the same name but different parameters. The method `private static int display(int a) { ... }` is not an overload of the `display` method because it has a different return type.
+**Explanation:** Method overloading allows multiple methods with the same name but differing parameters, while method overriding enables a subclass to implement a method already defined in its superclass. Differences between Method Overloading and Overriding:
 
-**Answer:** The correct option is `A` (`private static int display(int a) { ... }`).
+- **Definition:**
+  - **Overloading**: Defining multiple methods with the same name but different parameters.
+  - **Overriding**: Redefining a method in a subclass that exists in the superclass.
+  
+- **Parameters:**
+  - **Overloading**: Requires different parameter lists (type, number, or both).
+  - **Overriding**: Requires identical parameters.
+
+- **Return Type:**
+  - **Overloading**: Return types may differ.
+  - **Overriding**: Return type must match the original method.
+
+- **Access Modifier:**
+  - **Overloading**: Access modifiers may vary.
+  - **Overriding**: Cannot have a more restrictive modifier.
+
+- **Static Methods:**
+  - **Overloading**: Permissible.
+  - **Overriding**: Not permissible.
+
+- **Purpose:**
+  - **Overloading**: Allows different ways to perform similar operations.
+  - **Overriding**: Customises inherited behaviour.
+
+A example of overloading and overriding:
+
+- **Overloading**: `void print(int a)` and `void print(String b)`.
+- **Overriding**: `class A { void show() {} }` and `class B extends A { void show() {} }`.
+
+In the given options, `private static int display(int a) { ... }` is not an overload, as it has the same parameters as the original method.
+
+**Answer:** Option A (`private static int display(int a) { ... }`).
 
 ---
 
 > What is the output of the following code?
+>
 > ```java
 > public static int negate(int x) {
 >     x = -x;
@@ -317,6 +376,7 @@ These keywords have specific functions and cannot be used as identifiers in Java
 >     System.out.print(x);
 > }
 > ```
+>
 > - **Option A:** `55`
 > - **Option B:** `5-5`
 > - **Option C:** `-55`
@@ -329,12 +389,14 @@ These keywords have specific functions and cannot be used as identifiers in Java
 ---
 
 > Which of the following code is not true in Java?
+>
 > - **Option A:** `double[] values = {2,3,4,5}`
 > - **Option B:** `int[] values = {2,3,4,5}`
 > - **Option C:** `int[] values = {2,3.5,4,5}`
 > - **Option D:** `double[] values = {2,3,4,5}`
 
 **Explanation:** In Java, when initialising an array, the values must be of the same type as the array type.
+
 - **Option A:** `double[] values = {2,3,4,5}` is valid.
 - **Option B:** `int[] values = {2,3,4,5}` is valid.
 - **Option C:** `int[] values = {2,3.5,4,5}` is not valid because `3.5` is a `double` value, not an `int`.
@@ -345,12 +407,14 @@ These keywords have specific functions and cannot be used as identifiers in Java
 ---
 
 > How to determine if two strings are consist of the same characters in Java?
+>
 > - **Option A:** `compareTo()` method
 > - **Option B:** `compare()` method
 > - **Option C:** `equals()` method
 > - **Option D:** `==` method
 
 **Explanation:** In Java, you can use the `equals()` method to determine if two strings have the same characters.
+
 - **Option A:** `compareTo()` method is used to compare two strings lexicographically (i.e., based on the Unicode values of the characters) and returns an integer value indicating the comparison result (e.g., negative, zero, or positive). For instance, `"abc".compareTo("def")` would return a negative value; `"abc".compareTo("abc")` would return `0`; and `"def".compareTo("abc")` would return a positive value.
 - **Option B:** There is no `compare()` method for comparing strings.
 - **Option C:** The `equals()` method is used to compare the content of two strings.
@@ -361,9 +425,11 @@ These keywords have specific functions and cannot be used as identifiers in Java
 ---
 
 > How many times will the following loop execute?
+>
 > ```java
 > for (int i = 0; i < 5; i++) {...}
 > ```
+>
 > - **Option A:** 5
 > - **Option B:** 6
 > - **Option C:** 4
@@ -376,6 +442,7 @@ These keywords have specific functions and cannot be used as identifiers in Java
 ---
 
 > In a `for` loop, where is the condition checked?
+>
 > - **Option A:** Only at the beginning of the loop
 > - **Option B:** Only at the end of the loop
 > - **Option C:** Before the `for` loop body
@@ -388,6 +455,7 @@ These keywords have specific functions and cannot be used as identifiers in Java
 ---
 
 > How to convert Fahrenheit (`f`) to Celsius (`c`) in Java?
+>
 > - **Option A:** `double c = (f - 32) * 5 / 9;`
 > - **Option B:** `double c = (f - 32) * 9 / 5;`
 > - **Option C:** `double c = (f * 5 / 9) - 32;`
@@ -401,9 +469,11 @@ Considering the calculation order in Java, the correct option is `A` (`double c 
 ---
 
 > Select the pairs of `x` and `y` that satisfy the following condition:
+>
 > ```java
 > boolean b = (x % 7 == 0) && (y % 8 == 0);
 > ```
+>
 > - **Option A:** `x = 14`, `y = 21`
 > - **Option B:** `x = 32`, `y = 48`
 > - **Option C:** `x = 16`, `y = 56`
@@ -433,11 +503,13 @@ Considering the calculation order in Java, the correct option is `A` (`double c 
 ---
 
 > Given two `int` variables `a` and `b`, what is the result of the following code?
+>
 > ```java
 > int c = a;
 > b = c;
 > a = b;
-> ``` 
+> ```
+>
 > - **Option A:** The values of `a` and `b` are exchanged.
 > - **Option B:** The values of `a`, `b` and `c` become `0`.
 > - **Option C:** The values of `a` and `b` remain unchanged.
@@ -450,12 +522,14 @@ Considering the calculation order in Java, the correct option is `A` (`double c 
 ---
 
 > What is the main component of a Java `class`?
+>
 > - **Option A:** Methods and Attributes
 > - **Option B:** Variables and Functions
 > - **Option C:** Constructor and Destructor
 > - **Option D:** Objects and References
 
 **Explanation:** The main components of a Java `class` are methods and attributes (variables).
+
 - **Option A:** Methods and Attributes are the primary components of a Java class.
 - **Option B:** Variables and Functions are part of a class but not the main components.
 - **Option C:** Constructor and Destructor are special methods in a class but not the main components.
@@ -466,9 +540,11 @@ Considering the calculation order in Java, the correct option is `A` (`double c 
 ---
 
 > What is the output of the following code?
+>
 > ```java
 > System.out.println("Hello,World".split(",")[1]);
 > ```
+>
 > - **Option A:** `Hello`
 > - **Option B:** `World`
 > - **Option C:** `Hello,World`
@@ -481,6 +557,7 @@ Considering the calculation order in Java, the correct option is `A` (`double c 
 ---
 
 > What is the output of the following code?
+>
 > ```java
 > int count = 0;
 > for (int i = 0; i <= 10; i = i + 2) {
@@ -488,6 +565,7 @@ Considering the calculation order in Java, the correct option is `A` (`double c 
 > }
 > System.out.println(count);
 > ```
+>
 > - **Option A:** `1`
 > - **Option B:** `20`
 > - **Option C:** `55`
@@ -500,6 +578,7 @@ Considering the calculation order in Java, the correct option is `A` (`double c 
 ---
 
 > What is the output of the following code?
+>
 > ```java
 > int x = 5;
 > if (x >= 1) {
@@ -510,6 +589,7 @@ Considering the calculation order in Java, the correct option is `A` (`double c 
 >     System.out.print("Statement 3 ");
 > } else {...}
 > ```
+>
 > - **Option A:** `Statement 1 `
 > - **Option B:** `Statement 2 Statement 2 `
 > - **Option C:** `Statement 3 `
@@ -522,6 +602,7 @@ Considering the calculation order in Java, the correct option is `A` (`double c 
 ---
 
 > What is the return value declared on a method that does not return any value to the method caller in Java?
+>
 > - **Option A:** `void`
 > - **Option B:** `null`
 > - **Option C:** `int`
@@ -534,6 +615,7 @@ Considering the calculation order in Java, the correct option is `A` (`double c 
 ---
 
 > What is the value of `b` after the execution of the following code?
+>
 > ```java
 > int a = 12456789;
 > int b = 0;
@@ -542,6 +624,7 @@ Considering the calculation order in Java, the correct option is `A` (`double c 
 >     a = a / 10;
 > }
 > ```
+>
 > - **Option A:** `98765421`
 > - **Option B:** `12345789`
 > - **Option C:** `0`
@@ -554,6 +637,7 @@ Considering the calculation order in Java, the correct option is `A` (`double c 
 ---
 
 > What is the output of the following code?
+>
 > ```java
 > public class Test{
 >     public static void main(String[] args) {
@@ -562,6 +646,7 @@ Considering the calculation order in Java, the correct option is `A` (`double c 
 >     }
 > }
 > ```
+>
 > - **Option A:** Runtime error
 > - **Option B:** `90`
 > - **Option C:** `0`
@@ -574,6 +659,7 @@ Considering the calculation order in Java, the correct option is `A` (`double c 
 ---
 
 > Which is the correct positions to print a new line (`System.out.println()`) in the following code in order to print a $10\times10$ matrix?
+>
 > ```java
 > for (int row = 1; row <= 10; row++) {
 > // position 1
@@ -585,7 +671,9 @@ Considering the calculation order in Java, the correct option is `A` (`double c 
 > }
 > // position 4
 > ```
+>
 > - **Option A:** Position 1
+>
 > - **Option B:** Position 2
 > - **Option C:** Position 3
 > - **Option D:** Position 4
@@ -597,6 +685,7 @@ Considering the calculation order in Java, the correct option is `A` (`double c 
 ---
 
 > Which method can be used to find the length of a string in Java?
+>
 > - **Option A:** `getLength()`
 > - **Option D:** `length()`
 > - **Option C:** `getSize()`
@@ -609,6 +698,7 @@ Considering the calculation order in Java, the correct option is `A` (`double c 
 ---
 
 > Which of the following code prints "Hello, World" in Java?
+>
 > - **Option A:** `echo("Hello, World");`
 > - **Option B:** `print("Hello, World");`
 > - **Option C:** `System.out.println("Hello, World");`
@@ -621,12 +711,14 @@ Considering the calculation order in Java, the correct option is `A` (`double c 
 ---
 
 > Which of the following `for` loop declarations is NOT valid in Java?
+>
 > - **Option A:** `for (int i = 100; i >= 1; i / 5)`
 > - **Option B:** `for (int i = 0; i <= 100; i = 5*i)`
 > - **Option C:** `for (int i = 0; i <= 100; i += 5)`
 > - **Option D:** `for (int i = 100; i >= 2; --i)`
 
 **Explanation:**
+
 - **Option A:** The loop declaration `for (int i = 100; i >= 1; i / 5)` is not valid because the update expression `i / 5` does not modify the loop variable `i`.
 - **Option B:** The loop declaration `for (int i = 0; i <= 100; i = 5*i)` is correct.
 - **Option C:** The loop declaration `for (int i = 0; i <= 100; i += 5)` is correct.
@@ -637,12 +729,14 @@ Considering the calculation order in Java, the correct option is `A` (`double c 
 ---
 
 > Which of the following is the correct way to comment a single line in Java?
+>
 > - **Option A:** `// This is a comment`
 > - **Option B:** `/* This is a comment`
 > - **Option C:** `<!-- This is a comment -->`
 > - **Option D:** `# This is a comment`
 
 **Explanation:** In Java, a single-line comment is denoted by `//`.
+
 - **Option A:** `// This is a comment` is a valid single-line comment.
 - **Option B:** `/* This is a comment` is the start of a multi-line comment. The comment should be closed with `*/`. For example, `/* This is a comment */`.
 - **Option C:** `<!-- This is a comment -->` is an HTML/XML comment syntax, not Java.
@@ -653,6 +747,7 @@ Considering the calculation order in Java, the correct option is `A` (`double c 
 ---
 
 > Which of the following method results in a new string that the first string `str1` is followed by the second string `str2`?
+>
 > - **Option A:** `str1.concat(str2)`
 > - **Option B:** `str1.join(str2)`
 > - **Option C:** `str1.append(str2)`
@@ -661,4 +756,3 @@ Considering the calculation order in Java, the correct option is `A` (`double c 
 **Explanation:** In Java, the `concat` method is used to concatenate two strings, resulting in a new string that is the combination of the two input strings.
 
 **Answer:** The correct option is `A` (`str1.concat(str2)`).
-
