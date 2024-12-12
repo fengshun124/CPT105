@@ -20,6 +20,8 @@ public class Matrix {
     private void validateMatrix() {
         if (matrix == null) {
             throw new IllegalArgumentException("Matrix cannot be null");
+        } else if (matrix.length == 0) {
+            throw new IllegalArgumentException("Matrix cannot be empty");
         }
         for (double[] row : matrix) {
             if (row.length != matrix[0].length) {
