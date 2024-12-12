@@ -1,30 +1,4 @@
 public class MatrixTest {
-    public static void test() {
-        double[][] data1 = {{1, 2}, {3, 4}};
-        double[][] data2 = {{5, 6}, {7, 8}};
-
-        Matrix matrix1 = new Matrix(data1);
-        Matrix matrix2 = new Matrix(data2);
-
-        Matrix sum = matrix1.add(matrix2);
-        Matrix difference = matrix1.subtract(matrix2);
-        Matrix product = matrix1.multiply(matrix2);
-        Matrix transpose = matrix1.transpose();
-        double determinant = matrix1.determinant();
-
-        // Print results
-        System.out.println("Sum:");
-        printMatrix(sum.getData());
-        System.out.println("Difference:");
-        printMatrix(difference.getData());
-        System.out.println("Product:");
-        printMatrix(product.getData());
-        System.out.println("Transpose:");
-        printMatrix(transpose.getData());
-        System.out.println("Determinant:");
-        System.out.println(determinant);
-    }
-
     public static void testValidOperations() {
         double[][] data1 = {{1, 2}, {3, 4}};
         double[][] data2 = {{5, 6}, {7, 8}};
@@ -102,6 +76,14 @@ public class MatrixTest {
         }
 
         try {
+            double[][] emptyData = {};
+            Matrix emptyMatrix = new Matrix(emptyData);
+            System.out.println("Test Invalid Constructor (empty data): Failed");
+        } catch (IllegalArgumentException | IndexOutOfBoundsException e) {
+            System.out.println("Test Invalid Constructor (empty data): Passed");
+        }
+
+        try {
             double[][] invalidData = {{1, 2}, {3}};
             Matrix invalidMatrix = new Matrix(invalidData);
             System.out.println("Test Invalid Constructor (jagged array): Failed");
@@ -173,29 +155,7 @@ public class MatrixTest {
         }
     }
 
-    private static void testAdditionalFeatures() {
-        double[][] data1 = {
-                {1, 0, 1, 0},
-                {1, 1, 0, 0},
-                {0, 1, 1, 0},
-                {0, 0, 1, 1}
-        };
-        Matrix matrix1 = new Matrix(data1);
-
-        System.out.println(matrix1);
-        System.out.println("N rows: " + matrix1.getRows() + "\nN cols: " + matrix1.getCols());
-        System.out.println("Is square matrix? " + matrix1.isSquare());
-        System.out.println("Is identity matrix? " + matrix1.isIdentity());
-        System.out.println("Is symmetric matrix? " + matrix1.isSymmetric());
-
-        System.out.println("trace\n" + matrix1.trace());
-        System.out.println("power of three\n" + matrix1.power(3));
-        System.out.println("inverse\n" + matrix1.inverse());
-    }
-
     public static void main(String[] args) {
-        test();
-        testAdditionalFeatures();
         testValidOperations();
         testInvalidConstructor();
         testInvalidAddition();
